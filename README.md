@@ -26,5 +26,5 @@ aws lambda create-function --function-name go-lambda-function \
 ```
 - Invoke the lambda function:
 ```console
-aws lambda invoke --function-name go-lambda-function --cli-binary-format raw-in-base64-out --payload '{"What is your name?": "Larry", "How old are you?", "26"}' output.txt
+aws lambda invoke --function-name go-lambda-function --cli-binary-format raw-in-base64-out --payload '{"What is your name?": "Larry","How old are you?": 26}' output.txt
 ```
